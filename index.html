@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader App</title>
+    <link rel="stylesheet" href="style.css">
+    <main class="scss"></main>
+  </head>
+  <body>
+    <div class="loader">
+      <div class="blinder-container">
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+        <div class="blinder"></div>
+      </div>
+      <svg  viewBox="0 0 122 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="goo">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+              <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+              <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+        <mask id="mask0_1_11" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="122" height="122">
+        <circle cx="61" cy="61" r="61" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_1_11)" filter="url(#goo)">
+          <circle cx="61" cy="61" r="59" stroke="white" stroke-width="4"/>
+          <circle cx="61" cy="-28" r="61" fill="white"/>
+          <path class="drip-loader" d="M62.8683 -19.6652C62.1476 -21.4449 59.8524 -21.4449 59.1317 -19.6652L49.2923 4.63253C49.1875 4.89134 49.1308 5.15591 49.1165 5.41639C47.1624 8.20403 46 11.6984 46 15.4915C46 24.6089 52.7157 32 61 32C69.2843 32 76 24.6089 76 15.4915C76 11.6984 74.8376 8.20403 72.8835 5.41639C72.8692 5.15591 72.8125 4.89134 72.7077 4.63253L62.8683 -19.6652Z" fill="white"/>
+        </g>
+        </svg>
+        
+    </div>
+    <section>
+      <div class="mask">
+        <h1> So Snazzy. </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, praesentium perspiciatis facere quo nobis, incidunt voluptates eos molestias officiis similique harum assumenda velit deserunt repudiandae atque cupiditate amet a pariatur?</p>
+
+      </div>
+    </section>
+    <img src="./IMG_1147.JPG" style="display:none" alt="pic">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js
+"></script>
+        <script type="module" src="/main.js"></script>
+  </body>
+</html>

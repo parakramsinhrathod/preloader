@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.loader {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+}
+
+.loader .blinder-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loader .blinder-container .blinder {
+  background: #8da8a2;
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.loader svg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 7vw;
+}
+
+.drip-loader {
+  -webkit-animation: animateDrips 1s infinite;
+          animation: animateDrips 1s infinite;
+}
+
+@-webkit-keyframes animateDrips {
+  to {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes animateDrips {
+  to {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+section {
+  height: calc(100vh - 20vw);
+  padding: 20vw 7vw 0;
+}
+
+section .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2vw;
+  overflow: hidden;
+}
+
+section h1 {
+  font-size: 5vw;
+  line-height: 5vw;
+  margin: 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transform: translateY(-101%);
+          transform: translateY(-101%);
+}
+
+section p {
+  font-size: 2rem;
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+  -webkit-transform: translateY(-115%);
+          transform: translateY(-115%);
+}
+/*# sourceMappingURL=style.css.map */
